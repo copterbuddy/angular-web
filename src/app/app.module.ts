@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule, DatePipe } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { LearningComponent } from './page/learning/learning.component';
+// import { LearningComponent } from './page/learning/learning.component';
 import { LandingComponent } from './page/landing/landing.component';
 // import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
@@ -16,13 +17,14 @@ import { LandingComponent } from './page/landing/landing.component';
     LandingComponent,
     NavbarComponent,
     ExperienceComponent,
-    LearningComponent,
+    // LearningComponent,
     // SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot([])
   ],
   providers: [
     DatePipe
