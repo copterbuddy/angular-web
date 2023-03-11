@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { LearningComponent } from './page/learning/learning.component';
 import { LandingComponent } from './page/landing/landing.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LandingComponent } from './page/landing/landing.component';
     LandingComponent,
     NavbarComponent,
     ExperienceComponent,
-    LearningComponent
+    LearningComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
