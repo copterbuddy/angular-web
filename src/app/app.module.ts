@@ -4,16 +4,18 @@ import { CommonModule, DatePipe } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { LearningComponent } from './page/learning/learning.component';
+import { LandingComponent } from './page/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
+    LandingComponent,
     NavbarComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    LearningComponent
   ],
   imports: [
     BrowserModule,
