@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { LearningComponent } from './page/learning/learning.component';
 import { LandingComponent } from './page/landing/landing.component';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+// import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
     NavbarComponent,
     ExperienceComponent,
     LearningComponent,
-    SidebarComponent
+    // SidebarComponent
   ],
   imports: [
     BrowserModule,
