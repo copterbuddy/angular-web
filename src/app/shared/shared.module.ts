@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DatePipe } from '@angular/common';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,11 +11,13 @@ import { DatePipe } from '@angular/common';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ], 
   exports: [
     SidebarComponent,
-    DatePipe
+    DatePipe,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

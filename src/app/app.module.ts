@@ -7,9 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
-// import { LearningComponent } from './page/learning/learning.component';
 import { LandingComponent } from './page/landing/landing.component';
-// import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +15,12 @@ import { LandingComponent } from './page/landing/landing.component';
     LandingComponent,
     NavbarComponent,
     ExperienceComponent,
-    // LearningComponent,
-    // SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
   ],
   providers: [
     DatePipe

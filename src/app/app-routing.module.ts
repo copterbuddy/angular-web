@@ -4,7 +4,7 @@ import { LandingComponent } from './page/landing/landing.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
-  { path: 'learningpage', loadChildren: () => import('./module/learning/learning.module').then(m => m.LearningModule) },
+  { path: 'learn', loadChildren: () => import('./module/learning/learning.module').then(m => m.LearningModule) },
   { path: 'login', loadChildren: () => import('./module/login/login.module').then(m => m.LoginModule) }
 ];
 
