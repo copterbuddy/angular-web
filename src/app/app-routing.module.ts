@@ -6,6 +6,7 @@ import { LearningComponent } from './page/learning/learning.component';
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'learningpage', component: LearningComponent },
+  { path: 'login', loadChildren: () => import('./module/login/login.module').then(m => m.LoginModule) }
 ];
 
 @NgModule({
