@@ -2,29 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
-export interface LoginRequest{
-  username: string;
-  password: string;
-  expiresIn: number | null;
-}
-
-export interface LoginResponse{
-  status: string;
-  message: string;
-  accessToken: string;
-  expiresIn: number;
-  user: User;
-}
-
-export interface User {
-  id: number;
-  fname: string;
-  lname: string;
-  username: string;
-  email: string;
-  avatar: string;
-}
+import { LoginRequest } from '../../shared/models/login-request.model';
+import { LoginResponse } from '../../shared/models/login-response.model';
 
 @Injectable({
   providedIn: 'root'

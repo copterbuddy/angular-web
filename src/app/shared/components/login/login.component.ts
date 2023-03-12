@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { AuthServiceService } from '../../../service/auth-service/auth-service.service';
-import { switchMap } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { catchError, switchMap } from 'rxjs/operators';
+import { of, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -33,13 +33,10 @@ export class LoginComponent implements OnInit {
         console.log(response);
         return of(response);
       })
-    ).subscribe(
-      response => {
-        console.log(response);
-      },
-      error => {
-        console.log(error);
-      }
-    )
+    ),
+    catchError(error => {
+      console.log(error);
+      return throwError(() => new Error('something went wrong'))
+    })
   }
 }
